@@ -1,0 +1,91 @@
+
+/*
+ * Статьи плиткой
+ */
+.articles-tile-wrapper {
+	& .article {
+		display: inline-block;
+		width: 345px;
+		margin: 10px 15px;
+		text-align: left;
+
+		& .title {
+			display: block;
+			outline: none;
+			font-weight: initial;
+			font-size: larger;
+			margin: 10px 0px;
+		}
+
+		& .date {
+			color: @comments-color;
+		}
+	}
+
+	& .article:first-child{
+		margin: 10px 15px 10px 0;
+	}
+}
+
+/*
+ * Обычние статьи
+ */
+.articles-wrapper {
+
+	& .article {
+		display: inline-block;
+		margin: 0px 0px 10px 0px;
+		text-align: justify;
+
+		& .title {
+			font-weight: lighter;
+			margin: 10px 0px;
+			outline: none;
+		}
+
+		& .text {
+			margin: 15px 0px;
+		}
+
+		& .date {
+			color: @comments-color;
+		}
+	}
+}
+
+.article-listing-wrapper {
+	background: @sub-content-bg;
+
+	& .article {
+		display: inline-block;
+		margin: 25px 0px;
+		text-align: justify;
+
+		& .embeded {
+			margin: 0px 20px 0px 0px;
+			overflow: hidden;
+			height: 298px;
+			width: 531px;
+			float: left;
+		}
+
+		& .title {
+			font-weight: lighter;
+			margin: 10px 0px;
+			outline: none;
+		}
+
+		& .text {
+			margin: 15px 0px;
+		}
+
+		& .date {
+			color: @comments-color;
+			font-style: italic;
+		}
+
+		& .printer, .btn-more {
+			float: right;
+		}
+	}
+}

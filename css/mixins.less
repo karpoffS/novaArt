@@ -1,0 +1,55 @@
+// миксин для вывода свойства с браузерными префиксами
+.prefix(@key, @value){
+	-o-@{key}: @value;
+	-ms-@{key}: @value;
+	-moz-@{key}: @value;
+	-webkit-@{key}: @value;
+	@{key}: @value;
+}
+
+// миксин для кейфреймов
+.keyframes(@name; @arguments){
+	@-o-keyframes @name { @arguments(); }
+	@-ms-keyframes @name { @arguments(); }
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+// миксин для анимации
+.animation(@arguments) {
+	.prefix(animation, @arguments)
+}
+
+// миксин для выделения пользователем
+.user-select (@val) {
+	-webkit-touch-callout:  @val;
+	-webkit-user-select:    @val;
+	-khtml-user-select:     @val;
+	-moz-user-select:       @val;
+	-ms-user-select:        @val;
+	user-select:            @val;
+}
+
+// миксин для украшения текста placeholder-а
+.placeholder(@color: @placeholderText) {
+	&:-moz-placeholder {
+		/* FF 4-18 */
+		color: @color;
+		font-weight: normal;
+	}
+	&::-moz-placeholder {
+		/* FF 19+ */
+		color: @color;
+		font-weight: normal;
+	}
+	&:-ms-input-placeholder {
+		/* IE 10+ */
+		color: @color;
+		font-weight: normal;
+	}
+	&::-webkit-input-placeholder {
+		color: @color;
+		font-weight: normal;
+	}
+}

@@ -1,0 +1,84 @@
+
+/*
+ * Значки соц сетей
+ */
+.social{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 5px;
+	background: url("../images/social/sprite.png") no-repeat -1px -1px;
+
+	&.vk{
+		background-position: -205px;
+
+		&:hover{
+			background-position: -239px;
+		}
+	}
+
+	&.instagram {
+		background-position: -69px;
+
+		&:hover {
+			background-position: -103px;
+		}
+	}
+
+	&.twitter {
+		background-position: -137px;
+
+		&:hover {
+			background-position: -171px;
+		}
+	}
+
+	&.facebook {
+		background-position: -1px;
+
+		&:hover {
+			background-position: -35px;
+		}
+	}
+}
+
+
+// Значёк печати для статей
+.printer {
+	background: url("../images/articles/buttons/printer.png") -2px 0px no-repeat;
+	width: 17px;
+	height: 15px;
+	display: block;
+	cursor: pointer;
+	outline: none;
+	.user-select(none);
+
+	&:hover{
+		background-position: -23px 0px;
+	}
+}
+
+
+// Теги
+.tags {
+	display: block;
+
+	.tag{
+		display: block;
+		float: left;
+		margin-right: 10px;
+		padding: 0px 5px;
+		border-radius: 4px;
+		color: #333333;
+		font-style: italic;
+		border: 1px solid #cdcdcd;
+		background: #ffffff;
+		text-decoration: none;
+		font-size: small;
+		margin-top: 6px;
+
+		&:hover {
+			background: #f59f17;
+		}
+	}
+}

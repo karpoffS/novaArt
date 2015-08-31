@@ -1,0 +1,32 @@
+
+.header {
+	text-align: center;
+	border-bottom: 60px solid @content-wrapper-bg;
+
+	& .logo {
+		background: url("../images/logo.png") 0px 0px no-repeat;
+		display: block;
+		width: 80px;
+		height: 72px;
+		margin: 10px auto;
+	}
+
+	& .description {
+		margin: 0px 0px 20px 0px;
+		& > *{
+			margin: 0px 0px 10px 0px;
+			font-weight: lighter;
+		}
+	}
+
+	& .phone {
+		display: inline-block;
+		margin: 40px 0px;
+	}
+
+	& .big_header_pic {
+		width: 646px;
+		height: 367px;
+		margin: 0px auto -41px;
+	}
+}

@@ -1,0 +1,125 @@
+// Подвал
+.footer {
+	border-top: @footer-border-top ;
+	background: @footer-color-bg;
+	color: @footer-color;
+	padding: 40px 0px 30px 0px;
+	overflow: hidden;
+
+	& .feedback, .maps, .contacts {
+		display: block;
+		margin: 20px auto;
+	}
+
+	// Обратная связь
+	& .feedback {
+		width: 296px;
+
+
+		& input, textarea, .button {
+			margin: 10px 0px;
+			width: 296px;
+			border-radius: 3px;
+			border: 0px;
+			overflow: hidden;
+			outline: none;
+			color: @font-color;
+			transition: all 0.3s ease;
+			font-weight: normal;
+		}
+
+		& textarea{
+			height: 75px;
+			padding: 10px 20px;
+			resize: none;
+			.placeholder(@font-color);
+			background: @footer-feedback-input-color-bg;
+
+			&:hover, &:focus {
+				background: @footer-feedback-input-color-bg-hover;
+			}
+		}
+
+		& input{
+			height: 40px;
+			padding: 0px 20px;
+			.placeholder(@font-color);
+			background: @footer-feedback-input-color-bg;
+
+			&:hover, &:focus {
+				background: @footer-feedback-input-color-bg-hover;
+			}
+		}
+
+
+		& .button {
+			color: @footer-btn-color;
+			background: url("../images/footer/button/yellow.png") no-repeat 0px 0px;
+			display: block;
+			width: 296px;
+			height: 40px;
+			opacity: 0.65;
+			font-size: medium;
+			margin: 20px 0px 0px 0px;
+
+			&:hover{
+				color: @footer-btn-color-hover;
+				opacity: 0.9;
+			}
+		}
+
+
+
+	} // feedback
+
+
+	// выравнивание карты
+	& .maps {
+		width: 412px;
+		height: 316px;
+		color: #272727;
+		overflow: hidden;
+		margin-bottom: -16px;
+	}
+
+	// Контакты
+	& .contacts {
+		width: 297px;
+		overflow: hidden;
+		background: @footer-color-bg;
+
+		& .big-logo, .address , .phone .social {
+			text-align: right;
+		}
+
+		& .big-logo {
+			background: url("../images/footer/big_logo.png") 0px -3px no-repeat;
+			display: block;
+			width: 258px;
+			height: 62px;
+			float: right;
+			margin-bottom: 2.5em;
+
+			&:hover{
+				background-position: -258px -3px;
+			}
+		}
+
+		& .address {
+			margin-bottom: 3em;
+		}
+
+		& .phone {
+			float: right;
+			text-align: right;
+			margin-bottom: 4em;
+		}
+
+		& .social {
+			position: relative;
+			float: right;
+			bottom: 0px;
+		}
+	}
+}
+

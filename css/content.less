@@ -1,0 +1,39 @@
+
+@import "menus";
+@import "icons";
+@import "articles";
+@import "tiles";
+@import "person";
+@import "carousel";
+
+.content-wrapper {
+	background: @content-wrapper-bg;
+
+	& .normal-content, .white-content {
+		padding: 30px 6%;
+
+		& .header-of-contents {
+			margin: 10px 0px 20px 0px;
+			display: block;
+			font-size: 21pt;
+			font-weight: lighter;
+		}
+	}
+
+	& .white-content {
+		background: @sub-content-bg;
+
+		& .header{
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	& .normal-content {
+		& .tiles-wrapper {
+			& .tile:first-child {
+				margin: 0px 0px 10px 10px;
+			}
+		}
+	}
+
+}

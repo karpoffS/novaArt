@@ -1,0 +1,46 @@
+
+.persons-wrapper{
+	display: block;
+	margin: 0px 0px 0px -10px;
+
+	&> .person{
+		display: block;
+		width: 253px;
+		height: 256px;
+		margin: 10px 10px;
+		overflow: hidden;
+		position: relative;
+		float: left;
+
+
+		&> .photo {
+			display: block;
+			width: 219px;
+			height: 187px;
+			z-index: 1;
+			position: absolute;
+			top: 16px;
+			left: 16px;
+		}
+
+		&> .border{
+			z-index: 3;
+			background: url("../images/persons/border.png") 0px 0px no-repeat;
+			width: 253px;
+			height: 256px;
+			display: block;
+			position: relative;
+
+			&> .name{
+				font-weight: lighter;
+				font-size: medium;
+				text-align: center;
+				display: inline-block;
+				width: 99%;
+				position: absolute;
+				bottom: 18px;
+				left: 0px;
+			}
+		}
+	}
+}
